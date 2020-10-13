@@ -30,6 +30,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 1;
 }
 .nav {
   display: flex;
@@ -75,11 +76,12 @@ header .profile-image {
   border-radius: 50%;
   border: 5px rgba(240, 182, 24, 0.5);
   border-style: dotted solid dotted;
+  transform: scale(0.9);
   transition: all 0.5s;
 }
 
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(3deg);
 }
 .tag {
   background-color: #efefef;
@@ -173,21 +175,34 @@ a.social:hover {
 }
 
 .container {
+  background-color: rgb(255, 255, 255);
   height: 100vh;
-  background: url("images/page2/backgroundimage.jpg");
-  background-color: #242424;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .background {
-  background-color: rgba(117, 117, 117, 0.582);
-
-  height: 100%;
-  width: 100%;
+  padding-top: 50px;
+  line-height: 1.6;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.068);
+  height: 100vh;
+}
+.background img {
+  border-radius: 5%;
+  height: 650px;
+  background-size: cover;
+  background-position: 50% 80%;
+  position: relative;
+  transition: all 0.5s;
+}
+.background img:hover {
+  transform: scale(1.2);
 }
 
-.image {
-  height: 250px;
-  width: 250px;
+.hero-text {
+  padding: 5px 0px 0px 0px;
+  z-index: 1;
 }
 
 /* Styles for larger screens */
