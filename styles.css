@@ -117,14 +117,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: rgba(240, 182, 24);
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #0b8be0;
 }
 
 footer {
@@ -175,7 +175,7 @@ a.social:hover {
 }
 
 .container {
-  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(#e66465, #9198e5);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -190,19 +190,59 @@ a.social:hover {
 }
 .background img {
   border-radius: 5%;
-  height: 650px;
+  height: 500px;
   background-size: cover;
   background-position: 50% 80%;
   position: relative;
-  transition: all 0.5s;
-}
-.background img:hover {
-  transform: scale(1.2);
+  box-shadow: 2px 7px 10px darkslategrey;
 }
 
 .hero-text {
   padding: 5px 0px 0px 0px;
-  z-index: 1;
+  color: peachpuff;
+}
+
+.hero-background {
+  text-align: center;
+  background: url("images/page2/sydney2.jpg") no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.hero-background {
+  line-height: 1.5;
+}
+.hero-background .profile-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px rgba(240, 182, 24, 0.5);
+  border-style: dotted solid dotted;
+  transform: scale(0.9);
+  transition: all 0.5s;
+}
+
+.hero-background .profile-image:hover {
+  transform: scale(1.2) rotate(3deg);
+}
+
+.hero-background {
+  line-height: 1.5;
+}
+
+.footer {
+  padding-top: 25px;
+  color: whitesmoke;
+}
+
+a {
+  color: whitesmoke;
 }
 
 /* Styles for larger screens */
